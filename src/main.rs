@@ -81,6 +81,7 @@ fn parse_hello(input: &str) -> IResult<&str, &str, ()> {
     }
 }
 
+#[cfg(test)]
 mod tests {
     use nom::Parser;
 
