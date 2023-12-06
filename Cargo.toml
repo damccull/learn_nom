@@ -1,5 +1,5 @@
 [package]
-name = "nomtest"
+name = "learn_nom"
 version = "0.1.0"
 edition = "2021"
 
