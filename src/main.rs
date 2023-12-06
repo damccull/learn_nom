@@ -6,6 +6,8 @@ fn main() -> Result<(), anyhow::Error> {
     dbg!(parse_tag("Hello").parse(msg)?);
     dbg!(parse_comma_tags("Hello", "world").parse(msg)?);
     dbg!(parse_separated(parse_tag("Hello"), parse_tag(", "), parse_tag("world")).parse(msg)?);
+    dbg!(parse_bool("true, 12345")?);
+    dbg!(parse_either(parse_tag("true"), parse_tag("false")).parse("false, 54321")?);
     Ok(())
 }
 
